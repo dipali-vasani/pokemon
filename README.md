@@ -32,7 +32,7 @@ For code coverage and code quality
 
 6.	The game starts with 1st level mentioned in `application.properties`. 
 
-7.  You can use “explore” option to see your trainer profile at any stage of the game. It will show number of fights, Level and your pokemon attacks and list of opponent pokemons.
+7.  You can use “explore” option to see your trainer profile at any level of the game. It will show number of fights, Level and your pokemon attacks and list of opponent pokemons.
 
 8.	When you choose to “Fight”:
 
@@ -48,9 +48,9 @@ For code coverage and code quality
 
 9. As we are not using any databases, you will not be able to save game in one system and replay it in other.
 
-10. If you want to save a game at any point of time, you can use the "Save" option from the main menu.  You can resume, by choosing your Trainer name from the “Build/Create Trainer" option. Also, ensure, you are on same machine, as we don't have any connections database or clouds. 
+10. If you want to save a game at any point of time, you can use the "Save" option from the main menu.  You can resume, by choosing your Trainer name from the “Create a Trainer" option. Also, ensure, you are on same machine, as we don't have any connections database or clouds. 
 
-11.	The stages and the points configuration is placed in `application.properties` file and can be modified easily.
+11.	The levels and the points configuration is placed in `application.properties` file and can be modified easily.
 
 ## Assumptions
 

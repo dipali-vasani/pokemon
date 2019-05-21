@@ -18,7 +18,7 @@ public class Constants {
 	static final String LEVEL = "level";
 
 	/** The Constant DIRECTORY. */
-	static final String DIRECTORY = "config/";
+	public static final String DIRECTORY = "config/";
 
 	/** The Constant CONFIG_FILE. */
 	static final String CONFIG_FILE = "application.properties";
@@ -88,6 +88,13 @@ public class Constants {
 
 	/** The Constant LINE_SEPERATOR. */
 	public static final String LINE_SEPERATOR = "-------------------";
+
+	public static String BANNER = "\n" + "██████╗  ██████╗ ██╗  ██╗███████╗███╗   ███╗ ██████╗ ███╗   ██╗\n"
+			+ "██╔══██╗██╔═══██╗██║ ██╔╝██╔════╝████╗ ████║██╔═══██╗████╗  ██║\n"
+			+ "██████╔╝██║   ██║█████╔╝ █████╗  ██╔████╔██║██║   ██║██╔██╗ ██║\n"
+			+ "██╔═══╝ ██║   ██║██╔═██╗ ██╔══╝  ██║╚██╔╝██║██║   ██║██║╚██╗██║\n"
+			+ "██║     ╚██████╔╝██║  ██╗███████╗██║ ╚═╝ ██║╚██████╔╝██║ ╚████║\n"
+			+ "╚═╝      ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝\n";
 
 	/**
 	 * Instantiates a new constants.

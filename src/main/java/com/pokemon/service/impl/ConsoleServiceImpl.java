@@ -6,7 +6,7 @@ import java.util.Scanner;
 import com.pokemon.service.ConsoleService;
 
 /**
- * The Class ConsoleServiceImpl.
+ * Singleton Class ConsoleServiceImpl.
  * 
  * @author Dipali
  * @since 05/17/2019

@@ -13,7 +13,7 @@ import com.pokemon.model.Pokemon;
 import com.pokemon.service.impl.ConsoleServiceImpl;
 
 /**
- * The Class ApplicationProperties.
+ * The Class ApplicationProperties. Singleton class to read configuration data.
  * 
  * @author Dipali
  * @since 05/17/2019
@@ -33,9 +33,11 @@ public class ApplicationProperties {
 	private static ApplicationProperties applicationProperties = null;
 
 	/**
-	 * Instantiates a new application properties.
+	 * Instantiates a new application properties. The class is made singleton for
+	 * future enhancements.
+	 *
 	 */
-	private ApplicationProperties() {// The class is made singleton
+	private ApplicationProperties() {
 		try {
 			init();
 		} catch (Exception e) {
@@ -70,7 +72,7 @@ public class ApplicationProperties {
 			return listPokemon;
 		}
 		if (Objects.isNull(properties)) {
-			TerminationUtility.exitWithErrorLog("Unable to find configuration file for stages");
+			TerminationUtility.exitWithErrorLog("Unable to find configuration file for levels");
 		}
 		List<String> pokemons = new ArrayList<>();
 		StringTokenizer stringTokenizer = new StringTokenizer(get(Constants.POKEMON), ",");
@@ -91,7 +93,7 @@ public class ApplicationProperties {
 			return listLevels;
 		}
 		if (Objects.isNull(properties)) {
-			TerminationUtility.exitWithErrorLog("Unable to find configuration file for stages");
+			TerminationUtility.exitWithErrorLog("Unable to find configuration file for levels");
 		}
 		List<Integer> levels = new ArrayList<>();
 		StringTokenizer stringTokenizer = new StringTokenizer(get(Constants.LEVEL), ",");

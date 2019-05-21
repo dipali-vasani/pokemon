@@ -13,7 +13,7 @@ import com.pokemon.util.FileReadWriteUtility;
 import com.pokemon.util.ObjectUtils;
 
 /**
- * The Class Trainer.
+ * The Class Trainer. It represents the Character who will play the game.
  * 
  * @author dipali
  * @since 05/17/2019
@@ -122,7 +122,7 @@ public class Trainer implements Serializable {
 			// this.setOpponents(properties.listOpponents(pokemon.getName()));
 			this.level.setAttacks(properties.listAttacksByLevel(this.currentLevel, pokemon.getName()));
 		} catch (Exception e) {
-			LOGGER.log("Stage" + this.currentLevel + " does not exits");
+			LOGGER.log("Level" + this.currentLevel + " does not exits");
 		}
 	}
 

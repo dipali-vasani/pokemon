@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 import com.pokemon.model.Trainer;
 
 /**
- * The Class FileReadWriteUtility.
+ * The Class FileReadWriteUtility. This class contains static methods to read and write game state.
  * 
  * @author Dipali
  * @since 05/17/2019

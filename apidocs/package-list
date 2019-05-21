@@ -1,4 +1,5 @@
 com.pokemon
+com.pokemon.exception
 com.pokemon.model
 com.pokemon.service
 com.pokemon.service.impl

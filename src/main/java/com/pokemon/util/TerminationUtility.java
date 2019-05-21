@@ -3,15 +3,16 @@ package com.pokemon.util;
 import static com.pokemon.util.Constants.LOGGER;
 
 /**
- * Utility class extending JVM Shutdown hook created to perform System.exit , if
- * required.
+ * Utility class created to perform System.exit (termination), if required.
  * 
  * @author dipali
  * @since 05/17/2019
  */
 public class TerminationUtility extends Thread {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Thread#run()
 	 */
 	@Override
@@ -30,7 +31,8 @@ public class TerminationUtility extends Thread {
 	/**
 	 * Termination with error log.
 	 *
-	 * @param log            Log to be printed on console before exit
+	 * @param log
+	 *            Log to be printed on console before exit
 	 */
 	public static void exitWithErrorLog(String log) {
 		LOGGER.logError(log);

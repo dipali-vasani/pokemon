@@ -17,7 +17,7 @@ import com.pokemon.util.Constants;
 import com.pokemon.util.TerminationUtility;
 
 /**
- * The Class PokemonGameImpl.
+ * The Class PokemonGameImpl. Implementation of Pokemon Game. User can Create Trainer, Explore, Fight and Save/Resume Game.
  * 
  * @author Dipali
  * @since 05/17/2019
