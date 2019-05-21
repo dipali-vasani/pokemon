@@ -68,10 +68,10 @@ public class PokemonGameImpl implements Game {
 	 * Display menu on the console.
 	 */
 	@Override
-	public void showMenu() {
+	public void displayMenu() {
 		LOGGER.log(Constants.LINE_SEPERATOR);
 		LOGGER.log("Select your action ");
-		LOGGER.log("1. Build/Create an Trainer");
+		LOGGER.log("1. Create a Trainer");
 		LOGGER.log("2. Explore ");
 		LOGGER.log("3. Fight");
 		LOGGER.log("4. Save");
@@ -83,26 +83,26 @@ public class PokemonGameImpl implements Game {
 		switch (select) {
 		case "1":
 			create();
-			showMenu();
+			displayMenu();
 			break;
 		case "2":
 			explore();
-			showMenu();
+			displayMenu();
 			break;
 		case "3":
 			fight();
-			showMenu();
+			displayMenu();
 			break;
 		case "4":
 			save();
-			showMenu();
+			displayMenu();
 			break;
 		case "5":
 			quitGame();
 			break;
 		default:
 			LOGGER.log("OH NO! Your choise is still not implemented... Please try again ");
-			showMenu();
+			displayMenu();
 		}
 	}
 
@@ -154,7 +154,7 @@ public class PokemonGameImpl implements Game {
 	public void create() {
 		this.trainer = Trainer.setupTrainer();
 		LOGGER.log("Your trainer " + this.trainer.getName() + " is ready ");
-		if (trainer.getPokemon().getName() == null && trainer.getPokemon().getName().isEmpty()) { // if not saved
+		if (trainer.getPokemon().getName() == null || trainer.getPokemon().getName().isEmpty()) { // if not saved
 			LOGGER.log("Select your Pokemon ");
 			List<String> listPokemon = applicationProperties.listPokemon();
 			for (int i = 0; i < listPokemon.size(); i++) {
@@ -242,7 +242,7 @@ public class PokemonGameImpl implements Game {
 			this.trainer.setScore(this.trainer.getScore() + attackscore);
 		} catch (Exception e) {
 			TerminationUtility.exitWithErrorLog(
-					"Invalid stage" + this.trainer.getCurrentLevel() + "selected while fetching score");
+					"Invalid Level" + this.trainer.getCurrentLevel() + "selected while fetching score");
 		}
 
 		String currentOpponentAttack = currentOpponent + "'s " + opponentattacks.get(opponentAttackIndex).getName();
@@ -322,7 +322,7 @@ public class PokemonGameImpl implements Game {
 
 		if (this.trainer.getNoOfFights().equals(this.noOfOpponents)) {
 			LOGGER.logInstructions("You have already won over all your opponent pokemons");
-			showMenu();
+			displayMenu();
 			return;
 		}
 

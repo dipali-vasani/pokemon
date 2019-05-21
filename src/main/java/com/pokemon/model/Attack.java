@@ -81,9 +81,7 @@ public class Attack implements Serializable {
 		return "Attacks [name=" + name + ", points=" + points + "]";
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -95,35 +93,28 @@ public class Attack implements Serializable {
 		return result;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/* (non-Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) {
+		if (this == obj)
 			return true;
-		}
-		if (obj == null) {
+		if (obj == null)
 			return false;
-		}
-		if (getClass() != obj.getClass()) {
+		if (getClass() != obj.getClass())
 			return false;
-		}
 		Attack other = (Attack) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;
-		} else if (!name.equals(other.name)) {
+		} else if (!name.equals(other.name))
 			return false;
-		}
 		if (points == null) {
 			if (other.points != null)
 				return false;
-		} else if (!points.equals(other.points)) {
+		} else if (!points.equals(other.points))
 			return false;
-		}
 		return true;
 	}
 }

@@ -1,5 +1,5 @@
 # Pokemon
-This is simple Java command line application for Pokemon Fight Game
+This is simple Java command line application for Pokemon Fight Game inspired by most famous pokemon show and the latest movie.
 
 ## Build & Run
 
@@ -10,6 +10,13 @@ or also from commandline, go to root of project and execute following commands
 `mvn clean install`
 
 `java -jar target/pokemon-0.0.1-SNAPSHOT.jar`
+
+For code coverage and code quality
+
+`mvn clean test`
+
+`mvn sonar:sonar`
+
 
 ## Game Guide and Rules
 
@@ -25,7 +32,7 @@ or also from commandline, go to root of project and execute following commands
 
 6.	The game starts with 1st level mentioned in `application.properties`. 
 
-7.  You can use “explore” option to see your trainer profile at any stage of the game. It will show number of fights, Level and your pokemon moves and list of opponent pokemons.
+7.  You can use “explore” option to see your trainer profile at any stage of the game. It will show number of fights, Level and your pokemon attacks and list of opponent pokemons.
 
 8.	When you choose to “Fight”:
 

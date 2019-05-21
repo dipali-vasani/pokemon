@@ -12,7 +12,7 @@ import com.pokemon.service.impl.LoggerImpl;
 public class Constants {
 
 	/** The Constant DATA_FOLDER. */
-	static final String DATA_FOLDER = System.getProperty("user.home") + "/pokemon/data/";
+	public static final String DATA_FOLDER = System.getProperty("user.home") + "/pokemon/data/";
 
 	/** The Constant LEVEL. */
 	static final String LEVEL = "level";

@@ -11,7 +11,7 @@ public interface Game {
 	/**
 	 * Method to display menu on the console.
 	 */
-	void showMenu();
+	void displayMenu();
 
 	/**
 	 * Method to create new character.

@@ -1,0 +1,5 @@
+com.pokemon
+com.pokemon.model
+com.pokemon.service
+com.pokemon.service.impl
+com.pokemon.util
